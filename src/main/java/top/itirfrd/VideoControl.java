@@ -5,6 +5,7 @@ import com.sun.jna.Platform;
 import com.sun.jna.ptr.IntByReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 /**
  * @ClassName
@@ -13,6 +14,7 @@ import org.slf4j.LoggerFactory;
  * @Date
  * @Version 1.0
  **/
+@Component
 public class VideoControl {
     private static final Logger log = LoggerFactory.getLogger(VideoControl.class);
     private static HCNetSDK instance;
