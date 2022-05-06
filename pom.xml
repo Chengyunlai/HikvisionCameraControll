@@ -44,14 +44,6 @@
             <version>3.0.9</version>
         </dependency>
 
-        <dependency>
-            <groupId>top.itirfrd</groupId>
-            <artifactId>Video-Controll</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/examples.jar</systemPath>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -69,6 +61,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <includeSystemScope>true</includeSystemScope>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
