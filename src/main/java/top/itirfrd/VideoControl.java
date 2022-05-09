@@ -53,7 +53,7 @@ public class VideoControl {
     }
 
     static {
-        String path = System.getProperty("user.dir") + "\\lib\\libhcnetsdk.so";
+        String path = System.getProperty("user.dir") + "\\lib\\HCNetSDK.dll";
         log.info("===输出路径===" + path);
         if (Platform.isWindows()) {
             instance = (HCNetSDK) Native.loadLibrary(path, HCNetSDK.class);

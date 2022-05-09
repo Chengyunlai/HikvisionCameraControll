@@ -54,7 +54,7 @@ public class VideoController {
         this.videoControl.controlVedio(userId, 22,1);
     }
 
-    @PostMapping("/tapLeft")
+    @GetMapping("/tapLeft")
     public void tapLeft(){
         this.videoControl.controlVedio(userId, 23,0);
     }
