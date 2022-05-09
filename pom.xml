@@ -44,6 +44,14 @@
             <version>3.0.9</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.sun.jna</groupId>
+            <artifactId>examples</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${project.basedir}/src/main/resources/lib/examples.jar</systemPath>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -54,6 +62,13 @@
                     <include>**/*.jar</include>
                 </includes>
                 <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>lib</directory>
+                <includes>
+                    <include>*.dll</include>
+                    <include>**/*.dll</include>
+                </includes>
             </resource>
         </resources>
         <plugins>
